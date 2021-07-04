@@ -41,19 +41,14 @@ const App = () => {
 
   return (
     <div style = {{display: 'flex',  justifyContent:'center', alignItems:'center', height: '100vh'}}>
-      <text>
-
       <h1>user choice is: {userChoice}</h1>
-      <br />
       <h1>computer choice is: {computerChoice}</h1>
-      <br />
       {choices.map((choice, index) =>
         <button key={index} onClick={() => handleClick(choice)}>
           {choice}
         </button>
       )}
       <h1>{result}</h1>
-      </text>
     </div>
   )
 }
